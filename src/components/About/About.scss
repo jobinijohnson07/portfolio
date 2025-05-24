@@ -1,0 +1,14 @@
+.about-section{
+    padding: 30px;
+    .display-section{
+        display: flex;
+    }
+    .image-section{
+        width: 50%;
+    }
+    .content-section{
+        width: 50%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

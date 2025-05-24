@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="header-section flex items-center justify-between p-4 shadow-md bg-white dark:bg-black text-black dark:text-white">
+    <header className="header-section flex items-center justify-between shadow-md bg-white dark:bg-black text-black dark:text-white">
       <button
         onClick={toggleTheme}
         className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
