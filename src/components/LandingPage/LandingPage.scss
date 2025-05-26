@@ -1,15 +1,36 @@
-.landingpage-section{
-   overflow: hidden;
-   height: 100vh;
-   .name-content{
-      font-size: 70px;
-      text-align: center;
-      line-height: 40px;
-      margin-top: -45%;
-   }
-   .position-content{
-      font-size: 30px;
-      text-align: center;
-      line-height: 20px;  
-   }
+// .landingpage-section{
+//    overflow: hidden;
+//   position: relative;
+//   z-index: 10;
+//   padding-top: 100px; // Space below header
+//   padding-bottom: 80px; // Space before next section
+//   min-height: 80vh;
+//    .name-content{
+//       font-size: 70px;
+//       text-align: center;
+//       line-height: 40px;
+//       margin-top: -45%;
+//    }
+//    .position-content{
+//       font-size: 30px;
+//       text-align: center;
+//       line-height: 20px;  
+//    }
+// }
+.landingpage-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  .name-content {
+   font-size: 70px;
+   text-align: center;
+   line-height: 40px;
+   margin-top: 6%;
+  }
+
+  .position-content {
+    font-size: 30px;
+       text-align: center;
+      line-height: 20px; 
+  }
 }
