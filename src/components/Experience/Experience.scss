@@ -1,33 +1,93 @@
-.experience-section {
-  padding: 0px 30px 30px 30px;
-  .experience-content {
+.experience-section{
+  .experience-wrapper{
+    column-count: 2;
+    column-gap: 50px;
+    padding: 30px 60px 0px 60px;
+  }
+  .experience-content{
     font-size: 50px;
     font-weight: bold;
-    line-height: 50px;
-    padding-bottom: 30px;
+    padding-left: 60px;
   }
-  .experience-card {
-    position: relative;
-    overflow: hidden;
-
-    &:hover {
-      .experience-icon {
-        transform: rotate(360deg);
-        transition: transform 0.6s ease;
-      }
+  .experience-item{
+    break-inside: avoid;
+    margin-bottom: 40px;
+    p{
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 14px;
     }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
+    .experience-icon {
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      shape-margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      background-color: transparent;
+      color: white;
+      border-radius: 50%;
+      shape-outside: circle(50%);
+      clip-path: circle(50%);
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    .shape-react{ 
+      background-color: #06b6d4; 
     }
-  }
-  .animate-fade-in {
-    animation: fadeIn 1s ease-out both;
+    .shape-angular{ 
+      background-color: #dd0031;
+    }
+    .shape-wordpress{ 
+      background-color: #21759b; 
+    }
+    .shape-html{ 
+      margin-left: 18%; background-color: #e34f26; 
+    }
+    .shape-css{ 
+      background-color: #2965f1; 
+    }
+    .shape-sass{ 
+      background-color: #cd6799; 
+    }
+    .shape-tailwind{ 
+      background-color: #38bdf8; 
+    }
+    .shape-bootstrap{ 
+      background-color: #563d7c; 
+    }
+    .shape-js{
+      background-color: #f7df1e; 
+      color: #000;
+    }
+    .shape-ts{ 
+      background-color: #3178c6; 
+    }
+    .shape-mui{ 
+      background-color: #007fff; 
+    }
+    .shape-postman{ 
+      background-color: #ff6c37; 
+    }
+    .shape-github{ 
+      background-color: #24292e; 
+    }
+    .shape-rest{ 
+      background-color: #6c63ff; 
+    }
+    .shape-json{ 
+      background-color: #292929; 
+    }
+    .shape-mongodb{ 
+      background-color: #47a248; 
+    }
+    .shape-mysql{ 
+      background-color: #00758f; 
+    }
+    .shape-strapi{ 
+      background-color: #8e75ff; 
+    }
   }
 }

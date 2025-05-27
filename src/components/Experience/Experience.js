@@ -1,45 +1,132 @@
 import React from "react";
-import { FaReact, FaAngular, FaWordpress } from "react-icons/fa";
-import './Experience.scss';
+import { FaReact, FaAngular, FaWordpress, FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaGithub, FaJsSquare } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript, SiMui, SiPostman, SiJson, SiMongodb, SiMysql, SiStrapi, SiApollographql } from "react-icons/si";
+import "./Experience.scss";
 
 const experiences = [
   {
-    title: "React.js Development",
-    description: `With over 5 years of hands-on experience in React.js, I have built dynamic, high-performance web applications. I specialize in component-based architecture, state management with Redux or Context API, hooks, and RESTful API integration. My expertise ensures scalable and maintainable codebases that align with modern development best practices.`,
-    icon: <FaReact className="text-cyan-500" />,
+    title: "React.js",
+    description: `With over 5 years of hands-on experience in React.js, I have built dynamic, high-performance web applications.`,
+    icon: <FaReact />,
+    className: "shape-react",
   },
   {
-    title: "Angular Development",
-    description: `I have extensive experience developing scalable enterprise-grade applications using Angular. From routing and form handling to RxJS for reactive programming and modular code structure, my Angular projects are optimized for performance and maintainability. I've worked across Angular versions and kept up-to-date with best practices.`,
-    icon: <FaAngular className="text-red-600" />,
+    title: "Angular",
+    description: `Experienced in developing enterprise-grade applications using Angular with RxJS, modular architecture, routing, and form handling.`,
+    icon: <FaAngular />,
+    className: "shape-angular",
   },
   {
-    title: "WordPress Development",
-    description: `My WordPress expertise spans from custom theme and plugin development to full-site builds for businesses and blogs. I excel in PHP, ACF (Advanced Custom Fields), and optimizing for SEO and speed. I also have experience integrating headless WordPress with React or Angular frontends for modern solutions.`,
-    icon: <FaWordpress className="text-blue-800" />,
+    title: "WordPress",
+    description: `Specialized in building custom WordPress themes, plugins. Integrating headless CMS with React or Angular. Skilled in ACF & SEO optimization.`,
+    icon: <FaWordpress />,
+    className: "shape-wordpress",
+  },
+  {
+    title: "HTML5",
+    description: `Proficient in writing semantic, accessible HTML5 markup and structuring content for modern responsive web experiences.`,
+    icon: <FaHtml5 />,
+    className: "shape-html",
+  },
+  {
+    title: "CSS3",
+    description: `Skilled in advanced CSS techniques including Flexbox, Grid, transitions, and animations to create fluid and modern designs.`,
+    icon: <FaCss3Alt />,
+    className: "shape-css",
+  },
+  {
+    title: "Sass/SCSS",
+    description: `Experienced with Sass for creating modular, maintainable styles using mixins, variables, and nested rules.`,
+    icon: <FaSass />,
+    className: "shape-sass",
+  },
+  {
+    title: "Tailwind CSS",
+    description: `Expert in Tailwind CSS for utility-first styling with speed and consistency across responsive layouts.`,
+    icon: <SiTailwindcss />,
+    className: "shape-tailwind",
+  },
+  {
+    title: "Bootstrap",
+    description: `Built multiple responsive UIs using Bootstrap’s grid system and components, enhancing speed and consistency across devices.`,
+    icon: <FaBootstrap />,
+    className: "shape-bootstrap",
+  },
+  {
+    title: "JavaScript",
+    description: `Strong foundation in JavaScript ES6+, proficient in DOM manipulation, event handling, closures, async/await, and modern tooling.`,
+    icon: <FaJsSquare />,
+    className: "shape-js",
+  },
+  {
+    title: "TypeScript",
+    description: `Developed large-scale apps with TypeScript for type safety, better tooling, and scalability in both React and Angular projects.`,
+    icon: <SiTypescript />,
+    className: "shape-ts",
+  },
+  {
+    title: "Material UI",
+    description: `Implemented modern, responsive UIs using Material UI components and custom theming for consistency and accessibility.`,
+    icon: <SiMui />,
+    className: "shape-mui",
+  },
+  {
+    title: "Postman",
+    description: `Used Postman extensively for API testing, environment management, and automation with collections and scripting.`,
+    icon: <SiPostman />,
+    className: "shape-postman",
+  },
+  {
+    title: "GitHub",
+    description: `Version control and collaboration using GitHub: PRs, branching strategies, issues, CI/CD workflows.`,
+    icon: <FaGithub />,
+    className: "shape-github",
+  },
+  {
+    title: "REST API",
+    description: `Proficient in building and consuming RESTful APIs, including methods, headers, status codes, and integration.`,
+    icon: <SiApollographql />,
+    className: "shape-rest",
+  },
+  {
+    title: "JSON",
+    description: `Expert in working with JSON for data exchange between client and server, parsing, and schema structuring.`,
+    icon: <SiJson />,
+    className: "shape-json",
+  },
+  {
+    title: "MongoDB",
+    description: `Experience in designing NoSQL schemas, querying, and aggregating data with MongoDB in MERN stack projects.`,
+    icon: <SiMongodb />,
+    className: "shape-mongodb",
+  },
+  {
+    title: "MySQL",
+    description: `Skilled in relational database design, SQL queries, joins, indexing, and data normalization using MySQL.`,
+    icon: <SiMysql />,
+    className: "shape-mysql",
+  },
+  {
+    title: "Strapi",
+    description: `Used Strapi as a headless CMS to create customizable content APIs with authentication and media management.`,
+    icon: <SiStrapi />,
+    className: "shape-strapi",
   },
 ];
 
 const Experience = () => {
   return (
-    <div className="experience-section bg-gradient-to-b from-white to-neutral-100 dark:from-black dark:to-neutral-900 text-black dark:text-white">
-      <h2 className="experience-content max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
-        5+ Years Of Experience
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto animate-fade-in">
+    <div className="experience-section bg-white dark:bg-black text-black dark:text-white">
+      <div className="experience-content text-neutral-700 dark:text-neutral-400">5+ Years Of Experience</div>
+      <div className="experience-wrapper">
         {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="experience-card group relative bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-400 p-6 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <div className="text-5xl mb-4">{exp.icon}</div>
-            <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors duration-200">
-              {exp.title}
-            </h3>
-            <p className="text-base leading-relaxed">
-              {exp.description}
+          <div key={index} className="experience-item max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
+            <div className={`experience-icon ${exp.className}`}>
+              {exp.icon}
+            </div>
+            <p>
+              <strong>{exp.title}</strong> — {exp.description}
             </p>
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl"></div>
           </div>
         ))}
       </div>
