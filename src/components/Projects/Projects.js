@@ -1,5 +1,29 @@
 import React from "react";
 import "./Projects.scss";
+import {
+  FaReact,
+  FaAngular,
+  FaBootstrap,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiRedux,
+  SiJquery,
+  SiMui,
+} from "react-icons/si";
+import { TbComponents } from "react-icons/tb";
+
+// Icon and color map
+const iconMap = {
+  "React.js": { icon: <FaReact color="#61DBFB" />, color: "#E0F7FA" },
+  "Angular.js": { icon: <FaAngular color="#DD0031" />, color: "#FFEBEE" },
+  "Bootstrap": { icon: <FaBootstrap color="#7952B3" />, color: "#F3E5F5" },
+  "Tailwind": { icon: <SiTailwindcss color="#06B6D4" />, color: "#E0F7FA" },
+  "Redux": { icon: <SiRedux color="#764ABC" />, color: "#F3E5F5" },
+  "jQuery": { icon: <SiJquery color="#0769AD" />, color: "#E1F5FE" },
+  "Angular Material": { icon: <SiMui color="#007FFF" />, color: "#E3F2FD" },
+  "Unified UX Components": { icon: <TbComponents color="#3498db" />, color: "#E3F2FD" },
+};
 
 const projects = [
   {
@@ -65,7 +89,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-container bg-white dark:bg-black text-black dark:text-white">
-      <h2 className="section-title max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">Professional Experience</h2>
+      <h2 className="section-title text-neutral-700 dark:text-neutral-400">Professional Experience</h2>
       <div className="timeline max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
         {projects.map((proj, index) => (
           <div key={index} className="timeline-item">
@@ -78,9 +102,19 @@ const Projects = () => {
                 ))}
               </ul>
               <div className="tech-stack">
-                {proj.tech.map((tech, i) => (
-                  <span key={i} className="tech-badge">{tech}</span>
-                ))}
+                {proj.tech.map((tech, i) => {
+                  const data = iconMap[tech];
+                  return (
+                    <span
+                      key={i}
+                      className="tech-badge"
+                      style={{ backgroundColor: data?.color || "#eee" }}
+                    >
+                      <span className="icon">{data?.icon}</span>
+                      <span className="label">{tech}</span>
+                    </span>
+                  );
+                })}
               </div>
             </div>
           </div>

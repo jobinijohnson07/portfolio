@@ -1,11 +1,12 @@
 .projects-container {
-  padding-top: 3rem;
-  padding-left: 7rem;
-  margin: auto;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-bottom: 50px;
 
   .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
   }
 
   .timeline {
@@ -30,15 +31,14 @@
       }
 
       .timeline-date {
-        font-size: 0.9rem;
-        color: #888;
-        margin-bottom: 0.5rem;
+        font-size: 20px;
+        margin-bottom: 6px;
       }
 
       .timeline-content {
         h3 {
           margin: 0;
-          color: #2c3e50;
+          color: #3498db;
         }
 
         ul {
@@ -46,21 +46,40 @@
           padding-left: 1.2rem;
 
           li {
-            margin-bottom: 0.4rem;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 2px;
           }
         }
 
         .tech-stack {
           margin-top: 0.5rem;
+          margin-left: 1.2rem;
 
           .tech-badge {
-            display: inline-block;
-            background-color: #f1f1f1;
-            color: #333;
-            padding: 0.3rem 0.6rem;
-            margin-right: 0.4rem;
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 13px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
             border-radius: 20px;
             font-size: 0.75rem;
+            font-weight: 500;
+            color: #333;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+            .icon {
+              margin-right: 6px;
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+            }
+
+            &:hover {
+              transform: scale(1.05);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
           }
         }
       }

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaReact, FaAngular, FaWordpress, FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaGithub, FaJsSquare } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiMui, SiPostman, SiJson, SiMongodb, SiMysql, SiStrapi, SiApollographql } from "react-icons/si";
 import "./Experience.scss";
@@ -115,12 +117,25 @@ const experiences = [
 ];
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, 
+    });
+  }, []);
+
   return (
     <div className="experience-section bg-white dark:bg-black text-black dark:text-white">
-      <div className="experience-content text-neutral-700 dark:text-neutral-400">5+ Years Of Experience</div>
+      <div className="experience-content text-neutral-700 dark:text-neutral-400">
+        5+ Years Of Experience
+      </div>
       <div className="experience-wrapper">
         {experiences.map((exp, index) => (
-          <div key={index} className="experience-item max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
+          <div
+            key={index}
+            className="experience-item max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400"
+            data-aos="fade-up"
+          >
             <div className={`experience-icon ${exp.className}`}>
               {exp.icon}
             </div>
@@ -133,5 +148,4 @@ const Experience = () => {
     </div>
   );
 };
-
 export default Experience;
