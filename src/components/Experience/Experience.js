@@ -127,7 +127,7 @@ const Experience = () => {
   return (
     <div className="experience-section bg-white dark:bg-black text-black dark:text-white">
       <div className="experience-content text-neutral-700 dark:text-neutral-400">
-        5+ Years Of Experience
+        Tech Stack & Expertise
       </div>
       <div className="experience-wrapper">
         {experiences.map((exp, index) => (
