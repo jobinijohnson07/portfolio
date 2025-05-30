@@ -1,38 +1,41 @@
 import React from "react";
-import { FaReact, FaAngular, FaWordpress } from "react-icons/fa";
+import { FaProjectDiagram, FaPenFancy, FaBriefcase } from "react-icons/fa";
 import './Summary.scss';
 
 const experiences = [
-  {
-    title: "React.js Development",
-    description: `With over 5 years of hands-on experience in React.js, I have built dynamic, high-performance web applications. I specialize in component-based architecture, state management with Redux or Context API, hooks, and RESTful API integration. My expertise ensures scalable and maintainable codebases that align with modern development best practices.`,
-    icon: <FaReact className="text-cyan-500" />,
+    {
+    title: "Projects",
+    count: "52",
+    description: `I’ve successfully delivered 52 diverse projects, ranging from interactive web apps to scalable enterprise solutions. Each project has honed my skills in modern frontend technologies, solidified my architectural approach, and deepened my understanding of real-world user needs. My work reflects a commitment to performance, aesthetics, and usability.`,
+    icon: <FaProjectDiagram className="text-green-500" />,
   },
   {
-    title: "Angular Development",
-    description: `I have extensive experience developing scalable enterprise-grade applications using Angular. From routing and form handling to RxJS for reactive programming and modular code structure, my Angular projects are optimized for performance and maintainability. I've worked across Angular versions and kept up-to-date with best practices.`,
-    icon: <FaAngular className="text-red-600" />,
+    title: "Blogs",
+    count: "6",
+    description: `I've authored 6 insightful technical blogs on Medium, where I explore frontend development, best practices, and lessons from real-world challenges. My writing captures both the technical and human sides of being a developer. These pieces aim to educate, inspire, and spark meaningful reflection in the tech community.`,
+    icon: <FaPenFancy className="text-yellow-500" />,
   },
   {
-    title: "WordPress Development",
-    description: `My WordPress expertise spans from custom theme and plugin development to full-site builds for businesses and blogs. I excel in PHP, ACF (Advanced Custom Fields), and optimizing for SEO and speed. I also have experience integrating headless WordPress with React or Angular frontends for modern solutions.`,
-    icon: <FaWordpress className="text-blue-800" />,
-  },
+    title: "Experience",
+    count: "5+",
+    description: `With over 5+ years of experience as a Senior Front-End Developer, I’ve had the opportunity to shape digital experiences from the ground up blending design with functionality. My journey has been about more than just clean code; it's been about solving real problems, collaborating across teams, and building solutions that scale.`,
+    icon: <FaBriefcase className="text-blue-600" />,
+  }
 ];
 
 const Summary = () => {
   return (
     <div className="summary-section bg-white dark:bg-black text-black dark:text-white">
-      {/* <h2 className="summary-content max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
-        5+ Years Of Experience
-      </h2> */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto animate-fade-in">
         {experiences.map((exp, index) => (
           <div
             key={index}
             className="summary-card group relative bg-white dark:bg-neutral-900 text-neutral-700 dark:text-neutral-400 p-6 rounded-2xl shadow-xl border border-neutral-200 dark:border-neutral-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
-            <div className="text-5xl mb-4">{exp.icon}</div>
+            <div className="flex items-center justify-between mb-4">
+              <div className="text-5xl">{exp.icon}</div>
+              <div className="text-3xl font-bold text-neutral-900 dark:text-neutral-300">{exp.count}</div>
+            </div>
             <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors duration-200">
               {exp.title}
             </h3>

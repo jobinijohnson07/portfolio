@@ -1,19 +1,9 @@
 import React from "react";
 import "./Projects.scss";
-import {
-  FaReact,
-  FaAngular,
-  FaBootstrap,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiRedux,
-  SiJquery,
-  SiMui,
-} from "react-icons/si";
+import { FaReact, FaAngular, FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss, SiRedux, SiJquery, SiMui } from "react-icons/si";
 import { TbComponents } from "react-icons/tb";
 
-// Icon and color map
 const iconMap = {
   "React.js": { icon: <FaReact color="#61DBFB" />, color: "#E0F7FA" },
   "Angular.js": { icon: <FaAngular color="#DD0031" />, color: "#FFEBEE" },
