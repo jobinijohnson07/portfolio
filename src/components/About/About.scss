@@ -18,4 +18,21 @@
         font-size: 50px;
         font-weight: bold;
     }
+    .btn.button.secondary-button {
+        padding: 10px 30px;
+        font-size: 16px;
+        border: 2px solid #2563eb; 
+        border-radius: 8px;
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+    }
+    .btn.button.secondary-button:hover {
+        background-color: #2563eb; 
+        color: white; 
+    }
 }

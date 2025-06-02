@@ -9,23 +9,28 @@ const About = () => {
         <div className="image-section">
           <img src={DevImg} alt="devImg" />
         </div>
-        <div className="content-section ">
+        <div className="content-section">
           <div className="aboutheading-content text-neutral-700 dark:text-neutral-400">
             About Me
           </div>
           <div className="about-content max-w-xl text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
-          Welcome to my portfolio! I’m a Senior Front-End Developer specializing in building seamless digital 
-          experiences using modern frameworks like ReactJS, AngularJS, JavaScript, and TypeScript. My passion 
-          lies in transforming complex problems into elegant solutions through clean code, intuitive design, 
-          and scalable architecture. With a strong foundation in API development and testing, I thrive in 
-          fast-paced, collaborative environments that foster innovation and continuous learning. As part 
-          of my commitment to sharing knowledge and staying current, I’ll also be writing technical 
-          blogs covering development insights, best practices, and real world challenges to contribute to 
-          the community and grow alongside it.</div>
+            I'm a Senior Front-End Developer with a passion for creating seamless digital experiences using ReactJS, 
+            AngularJS, JavaScript, and TypeScript. I specialize in turning complex problems into clean, scalable solutions. 
+            With strong skills in API development and testing, I thrive in fast-paced, collaborative teams. I also write 
+            technical blogs to share insights, best practices, and real-world challenges to help grow the dev community.
+          </div>
+          <a
+            href="/JobinyJohnsonResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn button secondary-button mt-6"
+          >
+            View My Profile
+          </a>
         </div>
-        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default About;
