@@ -11,11 +11,11 @@ const RouteComponent = () => {
   return (
     <>
       <Header />
-      <BackgroundLinesDemo />
-      <About />
-      <Summary />
-      <Experience />
-      <Projects />
+      <div id="home"><BackgroundLinesDemo /></div>
+      <div id="about"><About /></div>
+      <div id="about"><Summary /></div>
+      <div id="experience"><Experience /></div>
+      <div id="projects"><Projects /></div>
     </>
   );
 };
