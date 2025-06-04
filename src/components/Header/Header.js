@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'summary', 'experience', 'projects'];
+      const sections = ['home', 'about', 'summary', 'experience', 'projects', 'blogs'];
       const scrollPosition = window.scrollY + 150;
 
       for (let id of sections) {
@@ -92,6 +92,12 @@ export default function Header() {
           className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}
         >
           Projects
+        </a>
+        <a
+          href="#blogs"
+          className={`nav-link ${activeSection === 'blogs' ? 'active' : ''}`}
+        >
+          Blogs
         </a>
         <button
           onClick={toggleTheme}

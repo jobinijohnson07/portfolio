@@ -6,6 +6,7 @@ import About from '../components/About/About.js';
 import Summary from '../components/Summary/Summary.js';
 import Experience from '../components/Experience/Experience.js';
 import Projects from '../components/Projects/Projects.js';
+import Blogs from '../components/Blogs/Blogs.js';
 
 const RouteComponent = () => {
   return (
@@ -16,6 +17,7 @@ const RouteComponent = () => {
       <div id="about"><Summary /></div>
       <div id="experience"><Experience /></div>
       <div id="projects"><Projects /></div>
+      <div id="blogs"><Blogs /></div>
     </>
   );
 };
