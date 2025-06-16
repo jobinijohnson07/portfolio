@@ -7,6 +7,7 @@ import Summary from '../components/Summary/Summary.js';
 import Experience from '../components/Experience/Experience.js';
 import Projects from '../components/Projects/Projects.js';
 import Blogs from '../components/Blogs/Blogs.js';
+import Achievements from '../components/Achievements/Achievements.js';
 
 const RouteComponent = () => {
   return (
@@ -18,6 +19,7 @@ const RouteComponent = () => {
       <div id="experience"><Experience /></div>
       <div id="projects"><Projects /></div>
       <div id="blogs"><Blogs /></div>
+      <div id="achieve"><Achievements /></div>
     </>
   );
 };

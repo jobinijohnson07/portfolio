@@ -23,4 +23,18 @@
   .nav-link.active {
     color: #2563eb;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  span:first-child {
+    font-size: 30px;
+    color: #2563eb;
+  }
+  span:last-child {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 4px;
+  }
+}
+
 }

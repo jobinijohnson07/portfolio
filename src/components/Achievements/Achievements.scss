@@ -1,13 +1,51 @@
-.achievements-section{
-    padding: 30px 60px;
-    .display-section{
-        display: flex;
+.achievements-section {
+  padding: 30px 60px 60px 60px;
+  .display-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image-section {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 60%;
+      height: auto;
+      object-fit: contain;
     }
-    .image-section{
-        width: 50%;
+  }
+      .abouthead-content{
+        font-size: 50px;
+        font-weight: bold;
     }
-    .content-section{
-        width: 50%;
-        margin-left: 30px;
+  .content-section {
+    width: 50%;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-left: 30px;
+    .cert-heading {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: #2563eb;
     }
+    .cert-list {
+      list-style: disc;
+      padding-left: 20px;
+      li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+        strong {
+          font-weight: 600;
+        }
+        span {
+          font-size: 16px;
+          font-style: normal;
+          color: #2563eb; 
+        }
+      }
+    }
+  }
 }
+
