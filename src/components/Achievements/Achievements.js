@@ -17,7 +17,7 @@ const Achievements = () => {
           </div>
             <ul className="cert-list">
               <li>
-                Solved <strong>53 problems</strong> on <span>LeetCode</span> improving problem-solving and DSA skills.
+                Solved <strong>50+ problems</strong> on <span>LeetCode</span> improving problem-solving and DSA skills.
               </li>
               <li>
                 Completed the <strong>Google Cloud Fundamentals: Core Infrastructure</strong> course by <span>Google</span>.
