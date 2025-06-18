@@ -11,7 +11,6 @@ const Achievements = () => {
         </div>
         <div className="content-section">
           <div className="aboutheading-content text-neutral-700 dark:text-neutral-400">
-            {/* <div className="cert-heading">📚 Achievements </div> */}
             <div className="abouthead-content text-neutral-700 dark:text-neutral-400">
             Achievements
           </div>
