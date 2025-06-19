@@ -69,3 +69,31 @@
     }
   }
 }
+@media (min-width: 360px) and (max-width: 980px) {
+  .blogs-section {
+    padding: 30px 20px;
+    .blogs-heading {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .blogs-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .blog-card {
+      .blog-image {
+        height: 160px;
+      }
+      .blog-content {
+        .blog-title {
+          font-size: 15px;
+        }
+        .blog-date {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

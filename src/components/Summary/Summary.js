@@ -26,7 +26,7 @@ const experiences = [
 const Summary = () => {
   return (
     <div className="summary-section bg-white dark:bg-black text-black dark:text-white">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto animate-fade-in">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto animate-fade-in">
         {experiences.map((exp, index) => (
           <div
             key={index}

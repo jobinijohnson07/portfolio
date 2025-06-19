@@ -1,37 +1,77 @@
-.about-section{
-    padding: 30px 60px;
-    .display-section{
-        display: flex;
+.about-section {
+  padding: 30px 60px;
+  .display-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image-section {
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
     }
-    .image-section{
-        width: 50%;
+  }
+  .content-section {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .aboutheading-content {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .about-content {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .btn.button.secondary-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background-color: #2563eb;
+      color: white;
     }
-    .content-section{
-        width: 50%;
-        margin-left: 30px;
+  }
+  @media (min-width: 360px) and (max-width: 980px) {
+    padding: 20px;
+    .display-section {
+      flex-direction: column;
     }
-    .about-content{
-        font-size: 20px;
-        line-height: 28px;
+    .image-section,
+    .content-section {
+      width: 100%;
+      margin-left: 0;
     }
-    .aboutheading-content{
-        font-size: 50px;
-        font-weight: bold;
+    .image-section {
+      margin-bottom: 20px;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .aboutheading-content {
+      font-size: 36px;
+      text-align: center;
+    }
+    .about-content {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: justify;
     }
     .btn.button.secondary-button {
-        padding: 10px 30px;
-        font-size: 16px;
-        border: 2px solid #2563eb; 
-        border-radius: 8px;
-        background-color: transparent;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
     }
-    .btn.button.secondary-button:hover {
-        background-color: #2563eb; 
-        color: white; 
-    }
+  }
 }

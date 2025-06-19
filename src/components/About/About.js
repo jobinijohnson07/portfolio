@@ -23,7 +23,6 @@ const About = () => {
             href="/JobinyJohnsonResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            // download="Jobiny_Johnson_Resume.pdf"
             className="btn button secondary-button mt-6 text-neutral-700 dark:text-neutral-400"
           >
             View My Profile

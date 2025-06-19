@@ -1,5 +1,5 @@
 .summary-section {
-  padding: 50px 60px 50px 60px;
+  padding: 50px 60px;
   .summary-content {
     font-size: 50px;
     font-weight: bold;
@@ -29,5 +29,31 @@
   }
   .animate-fade-in {
     animation: fadeIn 1s ease-out both;
+  }
+}
+@media (min-width: 360px) and (max-width: 980px) {
+  .summary-section {
+    padding: 30px 20px;
+    .summary-content {
+      font-size: 32px;
+      line-height: 38px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .summary-card {
+      padding: 20px;
+      .text-5xl {
+        font-size: 2.5rem; 
+      }
+      .text-3xl {
+        font-size: 1.75rem; 
+      }
+      h3 {
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+    }
   }
 }
