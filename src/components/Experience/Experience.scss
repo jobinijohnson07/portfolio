@@ -7,6 +7,7 @@
   .experience-content{
     font-size: 50px;
     font-weight: bold;
+    padding-top: unset;
     padding-left: 60px;
   }
   .experience-item{
@@ -88,6 +89,36 @@
     }
     .shape-strapi{ 
       background-color: #8e75ff; 
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 980px) {
+  .experience-section{
+    .experience-wrapper {
+      column-count: 1;
+      padding: 20px;
+    }
+    .experience-content {
+      font-size: 32px;
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+    .experience-item {
+      margin-bottom: 30px;
+      p {
+        font-size: 13px;
+      }
+      .experience-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    .experience-item .shape-html {
+      margin-left: unset;
     }
   }
 }
