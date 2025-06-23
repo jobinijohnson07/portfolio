@@ -1,6 +1,7 @@
 .projects-container {
   padding-top: 50px;
   padding-left: 70px;
+  padding-right: unset;
   .section-title {
     font-size: 50px;
     font-weight: bold;
@@ -70,6 +71,19 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 980px) {
+  .projects-container {
+    padding-top: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+    .section-title {
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 14px;
     }
   }
 }
