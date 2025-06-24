@@ -15,7 +15,7 @@
       object-fit: contain;
     }
   }
-  .abouthead-content{
+  .abouthead-content {
     font-size: 50px;
     font-weight: bold;
     line-height: 45px;
@@ -26,6 +26,7 @@
     font-size: 17px;
     margin-top: 1%;
     margin-left: 30px;
+    margin-bottom: unset;
     .cert-heading {
       font-size: 30px;
       font-weight: bold;
@@ -44,10 +45,45 @@
         span {
           font-size: 16px;
           font-style: normal;
-          color: #2563eb; 
+          color: #2563eb;
         }
       }
     }
   }
 }
-
+@media (min-width: 360px) and (max-width: 980px) {
+  .achievements-section{
+    padding: 20px;
+    .display-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .image-section {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        max-width: 80%;
+      }
+    }
+    .content-section {
+      width: 100%;
+      margin-left: 0;
+      text-align: left;
+      margin-bottom: 30px;
+      .abouthead-content {
+        font-size: 36px;
+        line-height: 40px;
+        text-align: left;
+      }
+      .cert-list {
+        padding-left: 18px;
+        li {
+          font-size: 16px;
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
