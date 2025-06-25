@@ -1,5 +1,6 @@
 .achievements-section {
-  padding: 30px 60px 60px 60px;
+  height: 80vh;
+  padding: 30px 60px 0px 60px;
   .display-section {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +54,7 @@
 }
 @media (min-width: 360px) and (max-width: 980px) {
   .achievements-section{
+    height: unset;
     padding: 20px;
     .display-section {
       flex-direction: column;
