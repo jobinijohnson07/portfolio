@@ -55,7 +55,7 @@ const Blogs = () => {
             </div>
           </a>
         ))}
-      </div>
+      </div> 
     </div>
   );
 };
