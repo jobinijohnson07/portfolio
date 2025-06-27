@@ -1,4 +1,3 @@
-import React from "react";
 import './Achievements.scss';
 import Achieve from "../../assets/achieve.png";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaProjectDiagram, FaPenFancy, FaBriefcase } from "react-icons/fa";
 import './Summary.scss';
 

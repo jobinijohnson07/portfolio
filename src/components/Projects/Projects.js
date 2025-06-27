@@ -1,4 +1,3 @@
-import React from "react";
 import "./Projects.scss";
 import { FaReact, FaAngular, FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss, SiRedux, SiJquery, SiMui } from "react-icons/si";

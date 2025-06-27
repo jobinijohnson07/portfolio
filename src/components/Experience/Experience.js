@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaReact, FaAngular, FaWordpress, FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaGithub, FaJsSquare } from "react-icons/fa";
