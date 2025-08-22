@@ -1,33 +1,51 @@
 .about-section {
-  padding: 30px 60px;
+  padding: 50px 80px;
+
   .display-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
   }
+
   .image-section {
-    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
+      max-width: 350px; 
       width: 100%;
       height: auto;
+      border-radius: 12px; 
+      object-fit: cover;
     }
   }
+
   .content-section {
-    width: 50%;
-    margin-left: 30px;
+    flex: 1;
+    min-width: 280px;
   }
+
   .aboutheading-content {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
+
   .about-content {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px;
+    margin-bottom: 20px;
+    text-align: justify;
   }
+
   .btn.button.secondary-button {
-    padding: 10px 30px;
+    padding: 12px 32px;
     font-size: 16px;
+    font-weight: 500;
     border: 2px solid #2563eb;
     border-radius: 8px;
     background-color: transparent;
@@ -36,43 +54,41 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
+
     &:hover {
       background-color: #2563eb;
       color: white;
     }
   }
-  @media (min-width: 360px) and (max-width: 980px) {
-    padding: 20px;
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+
     .display-section {
       flex-direction: column;
+      text-align: center;
     }
-    .image-section,
-    .content-section {
-      width: 100%;
-      margin-left: 0;
-    }
+
     .image-section {
       margin-bottom: 20px;
+
       img {
-        max-width: 100%;
-        height: auto;
+        max-width: 250px;
       }
     }
+
     .aboutheading-content {
-      font-size: 36px;
-      text-align: left;
-      margin-bottom: 4px;
+      font-size: 32px;
     }
+
     .about-content {
       font-size: 16px;
       line-height: 24px;
-      text-align: justify;
     }
+
     .btn.button.secondary-button {
-      display: block;
       width: 100%;
-      text-align: center;
-      margin-top: 20px;
     }
   }
 }
